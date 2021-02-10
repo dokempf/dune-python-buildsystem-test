@@ -7,6 +7,7 @@ set -e
 # created by virtualenv.
 #
 
+python -m pip install virtualenv
 python -m virtualenv env
 source env/bin/activate
 
