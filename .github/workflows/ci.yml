@@ -1,0 +1,29 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master  
+  workflow_dispatch:
+
+jobs:
+  scenario:
+    name: Scenario ${{ matrix.scenario }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        scenario:
+          - common-minimal
+
+    steps:
+    - name: Checking out the PDELab repository
+      uses: actions/checkout@v2
+      with:
+        submodules: true
+
+    - name: Run the scenario script
+      run: |
+        ./testcases/${{ matrix.scenario }}/install.sh

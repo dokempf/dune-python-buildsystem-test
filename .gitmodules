@@ -1,0 +1,3 @@
+[submodule "dune-common"]
+	path = dune-common
+	url = https://gitlab.dune-project.org/core/dune-common.git
