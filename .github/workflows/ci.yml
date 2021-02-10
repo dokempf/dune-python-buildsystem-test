@@ -27,6 +27,13 @@ jobs:
       with:
         submodules: true
 
+    # In the future, this can be set up to test an array of Python versions, but
+    # there is no gain in doing so right now.
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+
     - name: Run the scenario script
       run: |
         ./testcases/${{ matrix.scenario }}/install.sh
