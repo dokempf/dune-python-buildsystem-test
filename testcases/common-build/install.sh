@@ -12,6 +12,6 @@ DUNECONTROL_OPTS="--builddir=$(pwd)/build/common-build --opts=./testcases/common
 # Testing the Python code
 
 ## FIXME: The following line is currently necessary, but should vanish
-./dune-common/bin/dunecontrol $DUNECONTROL_OPTS make install_python
+sudo ./dune-common/bin/dunecontrol $DUNECONTROL_OPTS make install_python
 
 ./dune-common/bin/dunecontrol $DUNECONTROL_OPTS make test_python
