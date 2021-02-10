@@ -16,7 +16,10 @@ jobs:
     strategy:
       matrix:
         scenario:
-          - common-minimal
+          - common-build
+          - grid-build
+          - grid-nested-in-venv
+          - grid-nested-in-virtualenv
 
     steps:
     - name: Checking out the PDELab repository
