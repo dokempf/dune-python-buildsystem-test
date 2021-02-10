@@ -8,7 +8,7 @@ set -e
 
 DUNECONTROL_OPTS="--builddir=$(pwd)/build/grid-build --opts=./testcases/grid-build/config.opts --module=dune-grid"
 ./dune-common/bin/dunecontrol $DUNECONTROL_OPTS all
-./dune-common/bin/dunecontrol $DUNECONTROL_OPTS make install
+sudo ./dune-common/bin/dunecontrol $DUNECONTROL_OPTS make install
 
 # Testing the globally install
 rm -rf build

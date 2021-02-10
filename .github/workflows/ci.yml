@@ -37,4 +37,4 @@ jobs:
 
     - name: Run the scenario script
       run: |
-        sudo ./testcases/${{ matrix.scenario }}/install.sh
+        ./testcases/${{ matrix.scenario }}/install.sh
