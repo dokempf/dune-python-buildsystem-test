@@ -17,10 +17,10 @@ jobs:
       matrix:
         scenario:
           - common-build
-          - grid-build
-          - grid-install
-          - grid-nested-in-venv
-          - grid-nested-in-virtualenv
+          # - grid-build
+          # - grid-install
+          # - grid-nested-in-venv
+          # - grid-nested-in-virtualenv
 
     steps:
     - name: Checking out the PDELab repository
