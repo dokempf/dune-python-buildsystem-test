@@ -9,4 +9,5 @@ The `testcases` subdirectory contains scenarios that the changes should be able 
 * `grid-install`: Testing global installation with module inter-dependencies
 * `grid-nested-in-venv`: A simple test where the system Python interpreter is actually a `venv`-created virtual environment
 * `grid-nested-in-virtualenv`: A simple test where the system Python interpreter is actually a `virtualenv`-created virtual environment
+* `grid-no-network`: Make sure that no network connection results in disabled bindings
 * `grid-partial-install`: Mixing a globally installed dune-common with a local dune-grid
