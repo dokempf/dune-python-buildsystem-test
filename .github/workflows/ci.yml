@@ -16,11 +16,13 @@ jobs:
     strategy:
       matrix:
         scenario:
-          #- common-build
-          # - grid-build
-          # - grid-install
+          - common-build
+          - commin-install
+          - grid-build
+          - grid-install
           - grid-nested-in-venv
-          # - grid-nested-in-virtualenv
+          - grid-nested-in-virtualenv
+          - grid-partial-install
 
     steps:
     - name: Checking out the PDELab repository

@@ -6,7 +6,7 @@ set -e
 # Minimal installation test case with module dependencies: Building and installing dune-grid
 #
 
-DUNECONTROL_OPTS="--builddir=$(pwd)/build/grid-build --opts=./testcases/grid-build/config.opts --module=dune-grid"
+DUNECONTROL_OPTS="--builddir=$(pwd)/build/grid-install --opts=./testcases/grid-install/config.opts --module=dune-grid"
 ./dune-common/bin/dunecontrol $DUNECONTROL_OPTS all
 
 # Installing and removing the build tree
