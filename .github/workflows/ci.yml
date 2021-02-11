@@ -16,10 +16,10 @@ jobs:
     strategy:
       matrix:
         scenario:
-          - common-build
+          #- common-build
           # - grid-build
           # - grid-install
-          # - grid-nested-in-venv
+          - grid-nested-in-venv
           # - grid-nested-in-virtualenv
 
     steps:
