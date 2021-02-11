@@ -14,13 +14,8 @@ DUNECONTROL_OPTS="--builddir=$(pwd)/build/grid-nested-in-venv --opts=./testcases
 ./dune-common/bin/dunecontrol $DUNECONTROL_OPTS all
 
 # Testing the Python code
-
-## FIXME: The following line is currently necessary, but should vanish
-./dune-common/bin/dunecontrol $DUNECONTROL_OPTS make install_python
-
 ./dune-common/bin/dunecontrol $DUNECONTROL_OPTS make test_python
 
-# Installing
-sudo ./dune-common/bin/dunecontrol $DUNECONTROL_OPTS make install
-rm -rf build
+# Installing the Python code into the environment
+./dune-common/bin/dunecontrol $DUNECONTROL_OPTS make install_python
 python -c "import dune.grid"
