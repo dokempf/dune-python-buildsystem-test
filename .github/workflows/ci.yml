@@ -17,6 +17,7 @@ jobs:
       matrix:
         scenario:
           - common-build
+          - common-absolute-build
           - commin-install
           - grid-build
           - grid-install
