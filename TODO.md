@@ -11,6 +11,7 @@ Interfaces to revisit/deprecate/remove:
 * `DUNE_PYTHON_VIRTUALENV_SETUP` -> deprecated
 * `DUNE_PYTHON_ALLOW_GETPIP` -> remove behaviour and deprecate variable
 * The `PUREPYTHON` argument of `dune_python_install_package` was introduced to distinguish use cases that are now unified - correct?
+* Is the `INTERPRETER` argument of `dune_python_add_test` still needed or should all tests use the virtual env?
 
 Missing features that I have encountered but postponed:
 
