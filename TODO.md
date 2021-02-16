@@ -1,4 +1,4 @@
-Test cases to potentiall add
+Test cases to potentially add
 
 * pip --user installation
 * dune-testtools workflow
@@ -16,7 +16,6 @@ Interfaces to revisit/deprecate/remove:
 Missing features that I have encountered but postponed:
 
 * No Python -> Skip over most of `DunePythonCommonMacros.cmake`
-* `dune_python_install_package` needs a `DEPENDS` option to make sure that Pybind11 modules are built first and then the installation is triggered.
 
 Documentation issues:
 
