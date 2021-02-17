@@ -10,6 +10,14 @@
     Python package. This mechanism is used by the Python bindings to transport
     information from CMake to the installed Python package. A module dune-mymodule
     that provides a Pythob package dune.mymodule should set this to dune/mymodule/metadata.cmake
+* The CMake input variable `DUNE_PYTHON_INSTALL_EDITABLE` is non-functional and
+  deprecated: Installations into the Dune-internal virtualenv are always editable.
+  If you want to enable editable installation into your system environment (e.g.
+  because it is a virtual environment), you can always do so with `-DDUNE_PYTHON_ADDITIONAL_PIP_PARAMS=--editable`
+* The CMake input variable `DUNE_PYTHON_VIRTUALENV_SETUP` is non-functional and
+  deprecate as its behaviour is enabled by default.
+* The function `dune_python_require_virtualenv_setup` is non-functional and deprecated
+  for the same reason.
 
 # Changes 
 
