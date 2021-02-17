@@ -41,6 +41,11 @@ jobs:
       with:
         python-version: 3.7
 
+    - name: Install dependencies
+      run: |
+        apt update
+        apt install libopenmpi-dev openmpi-bin
+
     - name: Run the scenario script
       run: |
         ./testcases/${{ matrix.scenario }}/install.sh
