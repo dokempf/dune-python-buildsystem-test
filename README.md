@@ -12,3 +12,4 @@ The `testcases` subdirectory contains scenarios that the changes should be able 
 * `grid-nested-in-virtualenv`: A simple test where the system Python interpreter is actually a `virtualenv`-created virtual environment
 * `grid-no-network`: Make sure that no network connection results in disabled bindings
 * `grid-partial-install`: Mixing a globally installed dune-common with a local dune-grid
+* `grid-shared-libs`: A build with shared libraries being enabled (Python modules are always shared)

@@ -25,6 +25,7 @@ jobs:
           - grid-nested-in-virtualenv
           - grid-no-network
           - grid-partial-install
+          - grid-shared-libs
 
     steps:
     - name: Checking out the PDELab repository
