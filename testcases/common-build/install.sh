@@ -11,4 +11,3 @@ DUNECONTROL_OPTS="--opts=./testcases/common-build/config.opts --module=dune-comm
 
 # Testing the Python code
 ./dune-common/bin/dunecontrol $DUNECONTROL_OPTS make test_python
-./dune-common/bin/dunecontrol $DUNECONTROL_OPTS bexec ctest -R embed
