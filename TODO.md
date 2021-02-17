@@ -16,6 +16,7 @@ Missing features that I have encountered but postponed:
 
 * No Python -> Skip over most of `DunePythonCommonMacros.cmake`
 * My way of setting up dune-py is not filtering stdout so far, but these polishments should happen after consulting Andreas about this way of doing it.
+* The `assertHave` calls in `dune/grid/_grids.py` generate a circular dependency: They require an already configured dune-py, but I need to do `import dune.grid` during its setup
 
 Documentation issues:
 

@@ -18,15 +18,15 @@ jobs:
         scenario:
           - common-build
           - common-absolute-build
-          - common-embed
-          - commin-install
           - grid-build
-          - grid-install
           - grid-nested-in-venv
           - grid-nested-in-virtualenv
-          - grid-no-network
-          - grid-partial-install
-          - grid-shared-libs
+          # - common-embed
+          # - commin-install
+          # - grid-install
+          # - grid-no-network
+          # - grid-partial-install
+          # - grid-shared-libs
 
     steps:
     - name: Checking out the PDELab repository
