@@ -18,6 +18,7 @@ jobs:
         scenario:
           - common-build
           - common-absolute-build
+          - common-embed
           - commin-install
           - grid-build
           - grid-install
