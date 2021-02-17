@@ -1,21 +1,22 @@
-Test cases to potentiall add
+Test cases to potentially add
 
 * pip --user installation
 * dune-testtools workflow
 * dune-codegen workflow
+* Non-standard compiler use case
 
 Interfaces to revisit/deprecate/remove:
 
 * Is the complex default behaviour of `DUNE_PYTHON_INSTALL_LOCATION` still adequate?
-* `dune_python_require_virtualenv_setup` -> deprecated
-* `DUNE_PYTHON_VIRTUALENV_SETUP` -> deprecated
 * `DUNE_PYTHON_ALLOW_GETPIP` -> remove behaviour and deprecate variable
-* The `PUREPYTHON` argument of `dune_python_install_package` was introduced to distinguish use cases that are now unified - correct?
+* Is the `INTERPRETER` argument of `dune_python_add_test` still needed or should all tests use the virtual env?
+* `add_python_targets`: Is the symlinking necessary? The name is for sure bad.
 
 Missing features that I have encountered but postponed:
 
 * No Python -> Skip over most of `DunePythonCommonMacros.cmake`
-* `dune_python_install_package` needs a `DEPENDS` option to make sure that Pybind11 modules are built first and then the installation is triggered.
+* My way of setting up dune-py is not filtering stdout so far, but these polishments should happen after consulting Andreas about this way of doing it.
+* The `assertHave` calls in `dune/grid/_grids.py` generate a circular dependency: They require an already configured dune-py, but I need to do `import dune.grid` during its setup
 
 Documentation issues:
 

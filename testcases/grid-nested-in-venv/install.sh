@@ -7,7 +7,7 @@ set -e
 # created by venv.
 #
 
-python -m venv env
+python3 -m venv env
 source env/bin/activate
 
 DUNECONTROL_OPTS="--builddir=$(pwd)/build/grid-nested-in-venv --opts=./testcases/grid-nested-in-venv/config.opts --module=dune-grid"

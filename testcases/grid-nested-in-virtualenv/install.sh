@@ -7,8 +7,8 @@ set -e
 # created by virtualenv.
 #
 
-python -m pip install virtualenv
-python -m virtualenv env
+python3 -m pip install virtualenv
+python3 -m virtualenv env
 source env/bin/activate
 
 DUNECONTROL_OPTS="--builddir=$(pwd)/build/grid-nested-in-virtualenv --opts=./testcases/grid-nested-in-virtualenv/config.opts --module=dune-grid"
