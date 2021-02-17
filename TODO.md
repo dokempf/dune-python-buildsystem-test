@@ -15,6 +15,7 @@ Interfaces to revisit/deprecate/remove:
 Missing features that I have encountered but postponed:
 
 * No Python -> Skip over most of `DunePythonCommonMacros.cmake`
+* My way of setting up dune-py is not filtering stdout so far, but these polishments should happen after consulting Andreas about this way of doing it.
 
 Documentation issues:
 
