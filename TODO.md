@@ -9,7 +9,6 @@ Interfaces to revisit/deprecate/remove:
 
 * Is the complex default behaviour of `DUNE_PYTHON_INSTALL_LOCATION` still adequate?
 * `DUNE_PYTHON_ALLOW_GETPIP` -> remove behaviour and deprecate variable
-* Is the `INTERPRETER` argument of `dune_python_add_test` still needed or should all tests use the virtual env?
 * `add_python_targets`: Is the symlinking necessary? The name is for sure bad.
 
 Missing features that I have encountered but postponed:

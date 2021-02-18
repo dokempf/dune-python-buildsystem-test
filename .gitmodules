@@ -7,3 +7,6 @@
 [submodule "dune-grid"]
 	path = dune-grid
 	url = https://gitlab.dune-project.org/core/dune-grid.git
+[submodule "dune-testtools"]
+	path = dune-testtools
+	url = https://gitlab.dune-project.org/quality/dune-testtools.git

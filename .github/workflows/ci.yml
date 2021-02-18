@@ -21,6 +21,7 @@ jobs:
           - grid-build
           - grid-nested-in-venv
           - grid-nested-in-virtualenv
+          - testtools-case
           # - common-embed
           # - commin-install
           # - grid-install

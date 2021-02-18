@@ -18,6 +18,8 @@
   deprecate as its behaviour is enabled by default.
 * The function `dune_python_require_virtualenv_setup` is non-functional and deprecated
   for the same reason.
+* The `INTERPRETER` argument of `dune_python_add_test` has been removed. It has
+  only existed for a few weeks, so there is no deprecation period.
 
 # Changes 
 
