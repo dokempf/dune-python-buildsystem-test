@@ -26,7 +26,7 @@ jobs:
           - common-install
           - grid-install
           # - grid-no-network
-          # - grid-partial-install
+          - grid-partial-install
           # - grid-shared-libs
 
     steps:
