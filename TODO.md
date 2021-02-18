@@ -8,7 +8,6 @@ Test cases to potentially add
 Interfaces to revisit/deprecate/remove:
 
 * Is the complex default behaviour of `DUNE_PYTHON_INSTALL_LOCATION` still adequate?
-* `DUNE_PYTHON_ALLOW_GETPIP` -> remove behaviour and deprecate variable
 * `add_python_targets`: Is the symlinking necessary? The name is for sure bad.
 
 Missing features that I have encountered but postponed:
@@ -16,6 +15,8 @@ Missing features that I have encountered but postponed:
 * No Python -> Skip over most of `DunePythonCommonMacros.cmake`
 * My way of setting up dune-py is not filtering stdout so far, but these polishments should happen after consulting Andreas about this way of doing it.
 * The `assertHave` calls in `dune/grid/_grids.py` generate a circular dependency: They require an already configured dune-py, but I need to do `import dune.grid` during its setup
+* Revisit the role of `DUNE_PYTHON_ALLOW_GETPIP`
+
 
 Documentation issues:
 
