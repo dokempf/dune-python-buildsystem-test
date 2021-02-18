@@ -23,7 +23,7 @@ jobs:
           - grid-nested-in-virtualenv
           - testtools-case
           # - common-embed
-          # - commin-install
+          - common-install
           # - grid-install
           # - grid-no-network
           # - grid-partial-install
