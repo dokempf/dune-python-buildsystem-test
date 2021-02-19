@@ -23,12 +23,12 @@ jobs:
           - grid-nested-in-virtualenv
           - testtools-case
           - codegen-case
-          # - common-embed
+          - common-embed
           - common-install
           - grid-install
           # - grid-no-network
           # - grid-partial-install
-          - grid-shared-libs
+          # - grid-shared-libs
 
     steps:
     - name: Checking out the PDELab repository
