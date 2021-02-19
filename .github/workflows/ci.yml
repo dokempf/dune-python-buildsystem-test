@@ -34,7 +34,7 @@ jobs:
     - name: Checking out the PDELab repository
       uses: actions/checkout@v2
       with:
-        submodules: true
+        submodules: recursive
 
     # In the future, this can be set up to test an array of Python versions, but
     # there is no gain in doing so right now.
