@@ -46,7 +46,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt update
-        sudo apt install libopenmpi-dev openmpi-bin
+        sudo apt install libopenmpi-dev openmpi-bin libsuperlu-dev
 
     - name: Run the scenario script
       run: |
